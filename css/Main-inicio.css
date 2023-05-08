@@ -1,0 +1,84 @@
+.conteudo-primeiro{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 5rem;
+    gap: 50px;
+}
+
+.imagem{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+    width: 500px;
+    justify-content: end;
+}   
+
+.conteudo-texto{
+    justify-content: end;
+}
+
+.conteudo-texto h1{
+    font-size: 4.5rem;
+    font-family: "Fira Sans", Arial, sans-serif;
+    margin-bottom: 0px;
+    position: relative;
+}
+
+.conteudo-texto p{
+    font-size: 1.5rem;
+    color: rgb(74, 74, 74);
+}
+
+.conteudo-texto h1::before{
+    content: "";
+    display: block;
+    width: 130px;
+    height: 120px;
+    background-image: url(/img/detalhe.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -20px;
+    left: -40px;
+    z-index: -1;
+}
+
+
+@media (max-width: 900px){
+   
+    .conteudo-texto h1{
+        font-size: 2.9rem;
+    }
+
+    .conteudo-texto p{
+        font-size: 1.6rem;
+    }
+
+    .conteudo-texto h1::before{
+        width: 50px;
+        height: 70px;
+        top: -55px;
+        left: -35px;   
+    }
+}
+
+@media (max-width: 600px){
+   
+    .conteudo-texto h1{
+        font-size: 1.5rem;
+    }
+
+    .conteudo-texto p{
+        font-size: 1.2rem;
+    }
+
+    .conteudo-texto h1::before{
+        width: 50px;
+        height: 70px;
+        top: -55px;
+        left: -35px;
+    }
+}

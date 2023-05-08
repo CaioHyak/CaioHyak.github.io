@@ -1,0 +1,166 @@
+.grid-experiencia{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 60px 20px;
+}
+
+.titulo-experiencia h2{
+    margin: 0px;
+    font-size: 8rem;
+    line-height: 1;
+    max-width: 4ch;
+    text-transform: uppercase;
+    word-break: break-all;
+    font-family: "Fira Sans";
+    color: rgb(155, 154, 154);
+    padding: 150px 0px;
+}
+
+.experiencia-conteudo{
+    padding: 100px 0px;
+}
+
+.experiencia-conteudo .intro {
+    font-size: 2rem;
+    font-family: "Fira Sans", Arial, sans-serif;
+    color: #141414;
+}
+
+.bikcraft{
+    background: #f5f4f4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 5px;
+    position: relative;
+}
+
+.bikcraft-titulo{
+    margin: 0px;
+    padding: 20px 20px 0px 20px ;
+    font-size: 1.3rem;
+    font-weight: bold;
+    position: relative;
+}
+
+.bikcraft p {
+    padding:  0px 20px;
+    color: #6b6b6b;
+}
+
+.bikcraft ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    align-content: start;
+    padding: 0px 15px;
+}
+
+.bikcraft ul li{
+    list-style: none;
+    background-color: #eeeeee;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0px;
+}
+
+.bikcraft h3::before{
+    content: "";
+    display: block;
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(#b6f829, #67dd0a);
+    position: absolute;
+    top: 20px;
+    left: -4px;
+}
+
+.data-bikcraft{
+    position: absolute;
+    top: 22px;
+    left: -50px;
+}
+
+
+@media (max-width:900px){
+
+    .grid-experiencia{
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+        margin: 0 auto;
+    }
+
+    .experiencia-conteudo{
+        padding: 0px;
+    }
+
+    .titulo-experiencia h2{
+        font-size: 3.5rem;
+        word-break: keep-all;
+        padding: 50px 0px 20px 00px;
+    }
+
+    .experiencia-conteudo .intro{
+        font-size: 1.5rem;
+        padding: 0px;
+        
+    }
+
+    .bikcraft .bikcraft-titulo{
+        font-size: 1rem;
+    }
+
+    .bikcraft ul li{
+        font-size: 1rem;
+        padding: 0px;
+        gap: 0px;
+    }
+
+    
+    .data-bikcraft{
+        left: 20px;
+        top: 90px;
+    }
+}
+
+@media (max-width:600px){
+
+    .grid-experiencia{
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+        margin: 0 auto;
+    }
+
+    .experiencia-conteudo{
+        padding: 0px;
+    }
+
+    .titulo-experiencia h2{
+        font-size: 2.5rem;
+        word-break: keep-all;
+        padding: 50px 0px 20px 00px;
+    }
+
+    .experiencia-conteudo .intro{
+        font-size: 1.5rem;
+        padding: 0px;
+        
+    }
+
+    .bikcraft .bikcraft-titulo{
+        font-size: 1rem;
+    }
+
+    .bikcraft ul li{
+        font-size: 0.7rem;
+        padding: 0px;
+        gap: 0px;
+    }
+
+    
+    .data-bikcraft{
+        left: 20px;
+        top: 145px;
+    }
+}

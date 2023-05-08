@@ -1,0 +1,107 @@
+.footer-grid{
+    background-color: #000000;
+    margin: 0px auto;
+    padding: 10px;
+    font-family: "Fira Sans", Arial, sans-serif;
+}
+
+.contato{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contato-informacoes{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 120px 20px 60px 20px;
+    align-items: center;
+    gap: 100px;
+}
+
+.texto-introducao p{
+    font-size: 1.5rem;
+    color: gray;
+    position: relative;
+}
+
+.email{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+.instagram{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+}
+
+.texto-introducao p::before{
+    content: "";
+    display: block;
+    width: 130px;
+    height: 130px;
+    background-image: url(/img/detalhe.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -260px;
+}
+
+
+@media (max-width:900px){
+
+    .texto-introducao p::before{
+        top: -160px;
+        left: -20px;
+    }
+
+    .contato-informacoes{
+        grid-template-columns: 1fr;
+        padding: 60px 20px 0px 20px;
+    }
+
+
+    .email{
+        font-size: 1.5rem;
+    }
+    
+    .instagram{
+        font-size: 1.4rem;
+    }
+    
+    .texto-direitos{
+        color: rgb(114, 113, 113);
+        padding: 0px 20px;
+        font-family: "Fira Sans", Arial, sans-serif;
+    }
+}
+
+@media (max-width:600px){
+
+    .texto-introducao p::before{
+        top: -160px;
+        left: -20px;
+    }
+
+    .contato-informacoes{
+        grid-template-columns: 1fr;
+        padding: 60px 20px 0px 20px;
+    }
+
+
+    .email{
+        font-size: 1.5rem;
+    }
+    
+    .instagram{
+        font-size: 1.4rem;
+    }
+    
+    .texto-direitos{
+        color: rgb(114, 113, 113);
+        padding: 0px 20px;
+        font-family: "Fira Sans", Arial, sans-serif;
+    }
+}
+
