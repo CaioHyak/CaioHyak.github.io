@@ -164,3 +164,16 @@
         top: 145px;
     }
 }
+
+@media (max-width:300px){
+
+    .grid-experiencia{
+        margin: 0 auto;
+    }
+
+    .data-bikcraft{
+        left: 20px;
+        top: 220px;
+    }
+
+}

@@ -60,3 +60,18 @@ body{
     }
 }
 
+@media (max-width:300px){
+    .titulo-inicial{
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .menu-secundario ul li{
+        font-size: 0.6rem;
+        margin: 0 auto;
+    }
+
+    .header{
+        justify-content: center;
+    }
+}
