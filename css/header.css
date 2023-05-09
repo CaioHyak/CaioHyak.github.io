@@ -60,7 +60,7 @@ body{
     }
 }
 
-@media (max-width:300px){
+@media (max-width:450px){
     .titulo-inicial{
         font-size: 2rem;
         text-align: center;
